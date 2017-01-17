@@ -1,0 +1,40 @@
+/* using import */
+@import "_partial.scss";
+
+// variable
+$baseFontSize: 12px;     // number
+$brandColor  : red;      // color
+$imgDir      : "./img/"; // string
+
+/* using nest */
+#main {
+  background: url($imgDir + "bg.png");
+  width: 100%;
+  p {
+    color: $brandColor;
+    font-size: $baseFontSize;
+    .sub {
+      color: lighten($brandColor, 30%);
+      background-color: darken($brandColor, 30%);
+      font-size: $baseFontSize - 2px;
+    }
+    .sub2 {
+      @extend .sub;
+      &:hover {
+        background-color: darken($brandColor, 50%);
+      }
+    }
+  }
+}
+
+/* using template */
+@mixin round {
+  border-radius: 5px;
+}
+@mixin auto-color($color) {
+  @include round;
+  color: $color;
+}
+.btn1 {
+  @include auto-color($brandColor);
+}

@@ -1,5 +1,8 @@
 dest/
 
-# sass
+# lesson1 sass
 .sass-cache/
 *.css.map
+
+# lesson2 typescript
+main.js

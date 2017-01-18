@@ -1,3 +1,4 @@
+node_modules/
 dest/
 
 # lesson1 sass
@@ -6,3 +7,6 @@ dest/
 
 # lesson2 typescript
 main.js
+
+# lesson3 gulp
+lesson3_gulp/package.json

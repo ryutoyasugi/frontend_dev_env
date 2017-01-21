@@ -53,5 +53,5 @@ gulp.task('apimocker', function() {
   });
 });
 
-gulp.task('default', ['ts', 'sass', 'copy', 'browser-sync', 'watch', 'apimocker']);
+gulp.task('default', ['ts', 'sass', 'copy', 'apimocker', 'browser-sync', 'watch']);
 gulp.task('build', ['ts', 'sass' ,'copy']);

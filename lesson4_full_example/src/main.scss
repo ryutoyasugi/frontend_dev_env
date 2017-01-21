@@ -1,0 +1,17 @@
+$main-color: #f00;
+
+.main {
+  width: 100%;
+
+  p {
+    color: $main-color;
+  }
+}
+
+@mixin round {
+  border-radius: 5px;
+}
+
+.btn1 {
+  @include round;
+}

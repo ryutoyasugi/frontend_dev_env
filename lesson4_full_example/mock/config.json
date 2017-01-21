@@ -1,0 +1,17 @@
+{
+  "note": "This is a sample config file. You should change the mockDirectory to a more reasonable path.",
+  "quiet": false,
+  "port": "3001",
+  "latency": 50,
+  "logRequestHeaders": true,
+  "allowedDomains": ["*"],
+  "allowedHeaders": ["Content-Type", "X_DO_AUTH_TOKEN"],
+  "webServices": {
+    "hello": {
+      "verbs": ["get"],
+      "responses": {
+        "get": {"httpStatus": 200, "mockFile": "hello/get.json"}
+      }
+    }
+  }
+}

@@ -1,12 +1,14 @@
 node_modules/
+
+# build source
 dest/
 
-# lesson1 sass
+# sass
 .sass-cache/
 *.css.map
 
 # lesson2 typescript
-main.js
+lesson2_typescript/main.js
 
 # lesson3 gulp
 lesson3_gulp/package.json
